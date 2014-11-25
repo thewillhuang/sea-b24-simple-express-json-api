@@ -1,3 +1,4 @@
+'use strict';
 // // - a route that will display the local time
 
 // // - a route that takes a first name as part of the URL and greets that name.
@@ -25,14 +26,6 @@ router.use(function(req, res, next) {
   console.log(req.method, req.url);
 
   // continue doing what we were doing and go to the route
-  next();
-});
-
-app.get('/', function(req, res, next) {
-  var time = '<br><a href="/api/time"><br>Time</a><a href="/api"><br>api page</a>';
-  var name = '<a href="/api/hello/Travis"><br>hello/Travis</a>';
-  res.status(200);
-  res.send('you\'ve reached the index page, click for ' + time + name);
   next();
 });
 
