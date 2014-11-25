@@ -1,3 +1,5 @@
+<img =src"https://travis-ci.org/thewillhuang/sea-b24-simple-express-json-api.svg"></img>
+
 Simple JSON API
 ==============================
 A simple json api using express
